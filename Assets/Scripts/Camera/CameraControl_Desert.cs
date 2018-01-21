@@ -14,6 +14,8 @@ public class CameraControl_Desert : MonoBehaviour
 	// desert variables
 	private float zoomSize;
 	public bool tankMoving;
+	public GameObject tank;
+	public bool followTank;
 
     private void Awake()
     {
@@ -27,8 +29,13 @@ public class CameraControl_Desert : MonoBehaviour
 
     private void FixedUpdate()
     {
-		//Debug.Log (m_ZoomSpeed);
-		Move ();
+
+		if (followTank) {
+			Follow ();
+		}
+
+		//Move ();
+
 		if (tankMoving) {
 			ZoomOut ();
 		} else {
@@ -40,7 +47,16 @@ public class CameraControl_Desert : MonoBehaviour
     private void Move()
     {
 		transform.position = Vector3.SmoothDamp(transform.position, m_DesiredPosition, ref m_MoveVelocity, m_DampTime);
+
     }
+
+	private void Follow()
+	{
+		Vector3 setPosition = transform.position;
+		setPosition.x = tank.transform.position.x;
+		setPosition.z = tank.transform.position.z;
+		transform.position = setPosition;
+	}
 
 
     private void ZoomOut()
