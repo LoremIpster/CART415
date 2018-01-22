@@ -138,6 +138,12 @@ public class TankMovement_Desert : MonoBehaviour
 		m_Rigidbody.MoveRotation (m_Rigidbody.rotation * turnRotation);
     }
 
+	private void OnCollisionEnter(Collision col){
+		if (col.gameObject.tag == "Tank") {
+			cameraScript.tankProximity = true;
+		}
+
+	}
 
 }
 
