@@ -39,13 +39,13 @@ public class CameraControl_Desert : MonoBehaviour
 		}
 
 		if (tankProximity) {
-			ZoomInClose ();
+			//ZoomInClose ();
 			Follow ();
 			tankMoving = false;
 		} else if(tankMoving) {
 				ZoomOut ();
 			} else {
-				ZoomIn ();
+				//ZoomIn ();
 			}
 	}
 

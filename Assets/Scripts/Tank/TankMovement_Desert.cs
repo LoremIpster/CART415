@@ -26,12 +26,21 @@ public class TankMovement_Desert : MonoBehaviour
 	public GameObject cameraRig;
 	private CameraControl_Desert cameraScript;
 
+	// camera frustum detection
+	public Collider col;
+	private Camera cam;
+	private Plane[] planes;
+	private bool isOutOfBounds;
+
 
 
     private void Awake()
     {
         m_Rigidbody = GetComponent<Rigidbody>();
 
+		cam = Camera.main;
+		planes = GeometryUtility.CalculateFrustumPlanes (cam);
+		col = GetComponent<Collider> ();
     }
 
 
@@ -72,7 +81,17 @@ public class TankMovement_Desert : MonoBehaviour
 		m_TurnInputValue = Input.GetAxis (m_TurnAxisName);
 
 		EngineAudio ();
-    }
+
+		planes = GeometryUtility.CalculateFrustumPlanes (cam);
+		if (GeometryUtility.TestPlanesAABB(planes, col.bounds)){
+			//Debug.Log(col.name + "IS INSIDE");
+			isOutOfBounds = false;
+			}
+			else{
+			//Debug.Log(col.name + "IS OUTSIDE");
+			isOutOfBounds = true;
+			}
+		}
 
 
     private void EngineAudio()
@@ -124,8 +143,10 @@ public class TankMovement_Desert : MonoBehaviour
 
     private void Move()
     {
-		Vector3 movement = transform.forward * m_MovementInputValue * m_Speed * Time.deltaTime;
-		m_Rigidbody.MovePosition (m_Rigidbody.position + movement);
+		if (!isOutOfBounds) {
+			Vector3 movement = transform.forward * m_MovementInputValue * m_Speed * Time.deltaTime;
+			m_Rigidbody.MovePosition (m_Rigidbody.position + movement);
+		}
     }
 
 
