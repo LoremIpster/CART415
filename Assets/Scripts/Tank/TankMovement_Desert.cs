@@ -32,7 +32,10 @@ public class TankMovement_Desert : MonoBehaviour
 	private Plane[] planes;
 	private bool isOutOfBounds;
 
-
+	// audio
+	public AudioSource music;
+	public AudioSource ambience;
+	private float v = 0f;
 
     private void Awake()
     {
@@ -41,6 +44,9 @@ public class TankMovement_Desert : MonoBehaviour
 		cam = Camera.main;
 		planes = GeometryUtility.CalculateFrustumPlanes (cam);
 		col = GetComponent<Collider> ();
+
+		//music = GetComponent<AudioClip> ();
+		//ambience = GetComponent<AudioClip> ();
     }
 
 
@@ -135,6 +141,7 @@ public class TankMovement_Desert : MonoBehaviour
 			zPos = transform.position.z;
 
 			cameraScript.tankMoving = true;
+			FadeIn ();
 		} else {
 			cameraScript.tankMoving = false;
 		}
@@ -164,6 +171,13 @@ public class TankMovement_Desert : MonoBehaviour
 			cameraScript.tankProximity = true;
 		}
 
+	}
+
+	private void FadeIn(){
+		if (v < 1) {
+			v = 0.1 * Time.deltaTime;
+			music.volume = v;
+			}
 	}
 
 }
