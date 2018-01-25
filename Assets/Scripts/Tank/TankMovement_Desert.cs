@@ -35,7 +35,8 @@ public class TankMovement_Desert : MonoBehaviour
 	// audio
 	public AudioSource music;
 	public AudioSource ambience;
-	private float v = 0f;
+	public int fadeInTime;
+	public int fadeOutTime;
 
     private void Awake()
     {
@@ -44,9 +45,6 @@ public class TankMovement_Desert : MonoBehaviour
 		cam = Camera.main;
 		planes = GeometryUtility.CalculateFrustumPlanes (cam);
 		col = GetComponent<Collider> ();
-
-		//music = GetComponent<AudioClip> ();
-		//ambience = GetComponent<AudioClip> ();
     }
 
 
@@ -142,6 +140,7 @@ public class TankMovement_Desert : MonoBehaviour
 
 			cameraScript.tankMoving = true;
 			FadeIn ();
+			FadeOut ();
 		} else {
 			cameraScript.tankMoving = false;
 		}
@@ -174,10 +173,16 @@ public class TankMovement_Desert : MonoBehaviour
 	}
 
 	private void FadeIn(){
-		if (v < 1) {
-			v = 0.1 * Time.deltaTime;
-			music.volume = v;
-			}
+		if (music.volume < 1) {
+			music.volume = music.volume + (Time.deltaTime / (fadeInTime + 1));
+		}
+	}
+
+	private void FadeOut(){
+		if (ambience.volume > 0) {
+			ambience.volume = ambience.volume - (Time.deltaTime / (fadeOutTime + 1));
+			m_MovementAudio.volume = m_MovementAudio.volume - (Time.deltaTime / (fadeOutTime + 1));
+		}
 	}
 
 }

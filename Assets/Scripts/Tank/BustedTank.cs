@@ -12,12 +12,11 @@ public class BustedTank : MonoBehaviour {
 
 	}
 
-	private void OnTriggerEnter(Collider other){
+	private void OnTriggerStay(Collider other){
 		if (other.gameObject.tag == "Tank") {
-			//Debug.Log ("COLLLLL");
-			canvas.gameObject.SetActive (true);
+			canvas.gameObject.SetActive (false);
 		} else {
-			//canvas.gameObject.SetActive (false);
+			canvas.gameObject.SetActive (true);
 		}
 	}
 }
