@@ -15,8 +15,13 @@ public class BustedTank : MonoBehaviour {
 	private void OnTriggerStay(Collider other){
 		if (other.gameObject.tag == "Tank") {
 			canvas.gameObject.SetActive (false);
+			Debug.Log ("out of range!");
 		} else {
 			canvas.gameObject.SetActive (true);
 		}
+	}
+
+	private void OnTriggerExit(Collider other){
+	
 	}
 }
