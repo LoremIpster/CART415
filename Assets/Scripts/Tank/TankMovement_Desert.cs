@@ -22,6 +22,7 @@ public class TankMovement_Desert : MonoBehaviour
 	private float xPos;
 	private float zPos;
 	private bool isMoving;
+	public bool controlsOn;
 
 	public GameObject cameraRig;
 	private CameraControl_Desert cameraScript;
@@ -149,7 +150,7 @@ public class TankMovement_Desert : MonoBehaviour
 
     private void Move()
     {
-		if (!isOutOfBounds) {
+		if (controlsOn && !isOutOfBounds) {
 			Vector3 movement = transform.forward * m_MovementInputValue * m_Speed * Time.deltaTime;
 			m_Rigidbody.MovePosition (m_Rigidbody.position + movement);
 		}
@@ -157,12 +158,14 @@ public class TankMovement_Desert : MonoBehaviour
 
 
     private void Turn()
-    {
-        // Adjust the rotation of the tank based on the player's input.
-		float turn = m_TurnInputValue * m_TurnSpeed * Time.deltaTime;
+    {	
+		if (controlsOn) {
+			// Adjust the rotation of the tank based on the player's input.
+			float turn = m_TurnInputValue * m_TurnSpeed * Time.deltaTime;
 
-		Quaternion turnRotation = Quaternion.Euler (0f, turn, 0f);
-		m_Rigidbody.MoveRotation (m_Rigidbody.rotation * turnRotation);
+			Quaternion turnRotation = Quaternion.Euler (0f, turn, 0f);
+			m_Rigidbody.MoveRotation (m_Rigidbody.rotation * turnRotation);
+		}
     }
 
 	private void OnCollisionEnter(Collision col){

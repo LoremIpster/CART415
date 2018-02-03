@@ -7,7 +7,7 @@ public class DesertManager : MonoBehaviour {
 	public Canvas canvas;
 	public GameObject headlights;
 	public AudioSource engine;
-	public bool controlsOn;
+	public TankMovement_Desert tankScript;
 
 	void Start () {
 		headlights.SetActive (false);
@@ -22,11 +22,11 @@ public class DesertManager : MonoBehaviour {
 }
 
 	IEnumerator Intro(){
-		yield return new WaitForSeconds(2);
+		yield return new WaitForSeconds(1);
 		engine.enabled = true;
 		yield return new WaitForSeconds(2);
 		headlights.SetActive (true);
 		yield return new WaitForSeconds(1);
-		controlsOn = true;
+		tankScript.controlsOn = true;
 	}
 }
