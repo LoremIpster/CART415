@@ -30,6 +30,17 @@ namespace Complete
 		public AudioClip original;
 		public AudioClip casualties;
 
+		public Camera gameCamera;
+		public Camera originalCamera;
+		public Camera warCamera;
+		public Camera esportsCamera;
+		public Camera casualtiesCamera;
+
+		public GameObject officeLayout;
+		public GameObject galleryLayout;
+		public GameObject classroomLayout;
+		public GameObject bedroomLayout;
+
 
         private void Start()
         {
@@ -44,6 +55,16 @@ namespace Complete
             StartCoroutine(GameLoop());
 
 			audioSource = gameObject.GetComponent<AudioSource>();
+
+			originalCamera.gameObject.SetActive(false);
+			warCamera.gameObject.SetActive(false);
+			esportsCamera.gameObject.SetActive(true);
+			casualtiesCamera.gameObject.SetActive(false);
+
+			officeLayout.gameObject.SetActive(false);
+			galleryLayout.gameObject.SetActive(false);
+			classroomLayout.gameObject.SetActive(false);
+			bedroomLayout.gameObject.SetActive(true);
         }
 
 
@@ -141,20 +162,35 @@ namespace Complete
 			} else if (m_RoundNumber == 2) {
 				audioSource.clip = war;
 				audioSource.Play ();
+				esportsCamera.gameObject.SetActive(false);
+				warCamera.gameObject.SetActive(true);
+				bedroomLayout.gameObject.SetActive(false);
+				classroomLayout.gameObject.SetActive(true);
 				Debug.Log ("now playing: war");
 			} else if (m_RoundNumber == 3) {
 				audioSource.clip = original;
 				audioSource.Play ();
+				warCamera.gameObject.SetActive(false);
+				originalCamera.gameObject.SetActive(true);
+				classroomLayout.gameObject.SetActive(false);
+				officeLayout.gameObject.SetActive(true);
 				Debug.Log ("now playing: original");
 			} else if (m_RoundNumber == 4) {
 				audioSource.clip = casualties;
 				audioSource.Play ();
+				originalCamera.gameObject.SetActive(false);
+				casualtiesCamera.gameObject.SetActive(true);
+				officeLayout.gameObject.SetActive(false);
+				galleryLayout.gameObject.SetActive(true);
 				Debug.Log ("now playing: war");
-			} else if (m_RoundNumber == 5) {
+				m_RoundNumber = 1;
+			} 
+			/*
+			else if (m_RoundNumber == 5) {
 				audioSource.clip = null;
-				//audioSource.Play ();
-				Debug.Log ("done playing.");
-			}
+				m_RoundNumber = 1;
+				Debug.Log ("loopin'.");
+			}*/
         }
 
 
