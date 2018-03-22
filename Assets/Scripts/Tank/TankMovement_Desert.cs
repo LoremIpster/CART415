@@ -36,6 +36,7 @@ public class TankMovement_Desert : MonoBehaviour
 	// audio
 	public AudioSource music;
 	public AudioSource ambience;
+	public AudioSource engine;
 	public int fadeInTime;
 	public int fadeOutTime;
 
@@ -184,6 +185,7 @@ public class TankMovement_Desert : MonoBehaviour
 	private void FadeOut(){
 		if (ambience.volume > 0) {
 			ambience.volume = ambience.volume - (Time.deltaTime / (fadeOutTime + 1));
+			engine.volume = engine.volume - (Time.deltaTime / (fadeOutTime + 1));
 			m_MovementAudio.volume = m_MovementAudio.volume - (Time.deltaTime / (fadeOutTime + 1));
 		}
 	}

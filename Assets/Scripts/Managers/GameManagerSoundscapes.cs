@@ -57,14 +57,9 @@ namespace Complete
 			audioSource = gameObject.GetComponent<AudioSource>();
 
 			originalCamera.gameObject.SetActive(false);
-			warCamera.gameObject.SetActive(false);
-			esportsCamera.gameObject.SetActive(true);
-			casualtiesCamera.gameObject.SetActive(false);
-
+			casualtiesCamera.gameObject.SetActive(true);
 			officeLayout.gameObject.SetActive(false);
-			galleryLayout.gameObject.SetActive(false);
-			classroomLayout.gameObject.SetActive(false);
-			bedroomLayout.gameObject.SetActive(true);
+			galleryLayout.gameObject.SetActive(true);
         }
 
 
@@ -154,6 +149,11 @@ namespace Complete
             // Wait for the specified length of time until yielding control back to the game loop.
             yield return m_StartWait;
 
+			//audioSource.clip = casualties;
+			//audioSource.Play ();
+
+
+			/*
 			Debug.Log (m_RoundNumber);
 			if (m_RoundNumber == 1) {
 				audioSource.clip = esport;
@@ -184,7 +184,10 @@ namespace Complete
 				galleryLayout.gameObject.SetActive(true);
 				Debug.Log ("now playing: war");
 				m_RoundNumber = 1;
-			} 
+			}
+			*/
+
+
 			/*
 			else if (m_RoundNumber == 5) {
 				audioSource.clip = null;
