@@ -13,17 +13,21 @@
 * Code repository: https://github.com/saboudreault/CART415
 * Price: $0.00
 
-## Simon-Albert?
+
+## Simon-Albert Boudreault?
 
 Simon-Albert makes videogames that might not be videogames for people who do not play videogames, which is simpler than it sounds. He also organises events centered around the local experimental scene so that artists, hobbyists and other solo devs can find a place to enjoy weird games and talk about them.
 
 
 ## Description
 
-Tanks shooting tanks! The tanks are upside down now?! Tank on tank action! Why is that cactus floating into the sky?! Shoot that tank! The sky seems to be green?! The shadows have all vanished?! That tank just drove down through the ground?! That oil derrick grew to three times its original size?! What is this, some kind of completely artificial videogame world?!
-
+What does it mean to be a tank? What do they think of each other? How do they feel about color? What are they dreaming of in-between rounds? Are waypoints like catnip pads for tanks? Are tanks art? If a tank dies alone in the desert, who's updating the score? Why won't this tank stop shooting at me? I'm just bystanding the whole thing! I never asked for attention. Oh well. I guess tanks will be tanks...
 
 ## History
+
+_Tanks..._ is first and foremost an academic project that went under Pippin Barr's supervision.
+
+***
 
 _Tanks!?_ grew from my many engagements with Unity's [Tanks Tutorial](https://unity3d.com/learn/tutorials/s/tanks-tutorial) as I tried to learn the engine. This year I had the idea of running my game design studio course at Concordia University by having students start with the Tanks! game from the tutorial and create variations on it. Philosophically, I wanted the class to focus on specific affordances of the Unity engine, so they're tasked with making three prototypes, one focused on Lights and Camera, one on Sound, and one on 3D Objects. These are all kind of "ontologically basic" categories of existence in the Unity engine.
 
@@ -40,61 +44,55 @@ The player, hopefully, will be all like: "Tanks!?"
 
 ## Technology
 
-*Tanks!?* was made in [Unity](http://unity3d.com) and is based on Unity's own [Tanks Tutorial game](https://unity3d.com/learn/tutorials/s/tanks-tutorial).
-
-_Tanks!?_ is an open source game licensed under a [Creative Commons Attribution-NonCommercial 3.0 Unported License](http://creativecommons.org/licenses/by-nc/3.0/). You are looking at the code (and process and press) repository right now.
+*Tanks...* was made in [Unity](http://unity3d.com) and is based on Unity's own [Tanks Tutorial game](https://unity3d.com/learn/tutorials/s/tanks-tutorial).
 
 
 ## Features
 
-- Tanks
-- Dust
-- Museums
-- A looping 30-second chiptune beat that will claw its way through your soul and never let go
-- Some more tanks
+* Tanks
+* Dust
+* Art
+* A looping 30-second chiptune beat that will claw its way through your skull and never let go
+* Some more tanks
 
-## Videos
+## Games
 
-### [Tanks!? Trailer](https://youtu.be/DvTVIp3JwJQ)
+### 1. An Ontological Examination of Unity Through a Critique of Casual Violence on the Tanks! Game in Hope of Finding a Pacifist Approach to Game Design
+asdf
 
-[![Tanks!? Trailer](https://img.youtube.com/vi/DvTVIp3JwJQ/0.jpg)](https://youtu.be/DvTVIp3JwJQ)
+### 2. Grounded
+asdf
+
+### 3. Searching for Red Tank
+asdf
+
 
 ## Images
 
-![1](images/tanks-exclamation-mark-question-mark-1.png)
+![1](https://github.com/saboudreault/CART415/blob/master/Assets/Wiki/s_gallery.png)
 
-![2](images/tanks-exclamation-mark-question-mark-2.png)
+![2](https://github.com/saboudreault/CART415/blob/master/Assets/Wiki/grounded.png)
 
-![3](images/tanks-exclamation-mark-question-mark-3.png)
-
-![4](images/tanks-exclamation-mark-question-mark-4.png)
-
-![5](images/tanks-exclamation-mark-question-mark-5.png)
-
-![6](images/tanks-exclamation-mark-question-mark-6.png)
-
-
-## Press
-
-- Coming soon?
+![3](https://github.com/saboudreault/CART415/blob/master/Assets/Wiki/searching.png)
 
 
 ## Additional Links
 
-- [Pippin's blog posts about Tanks!?](http://www.pippinbarr.com/search.html?q=tankses) (not many)
-- [Process documentation of Tanks!?](https://github.com/pippinbarr/tanks-exclamation-mark-question-mark/wiki)
-- [Commit history of Tanks!?](https://github.com/pippinbarr/tanks-exclamation-mark-question-mark/commits/master)
+- [Process documentation of Tanks...](https://github.com/saboudreault/CART415/wiki/Journal)
+- [Pippin Barr's process documentation of Tanks!?](https://github.com/pippinbarr/tanks-exclamation-mark-question-mark/wiki)
+- [Commit history of Tanks!?](https://github.com/saboudreault/CART415/commits/master)
 - [The original Unity Tanks Tutorial](https://unity3d.com/learn/tutorials/s/tanks-tutorial)
 
 
 ## Credits
 
-* Pippin Barr: everything that isn't the original tutorial.
+* Simon-Albert Boudreault: everything
+* Pippin Barr: the whole underlying concept
 * Christoph Peters et al., Unity Technologies: the original tutorial
 
 ## Contact
 
-* Email: [pippin.barr+press@gmail.com](mailto:pippin.barr+press@gmail.com)
-* Website: [www.pippinbarr.com](http://www.pippinbarr.com/)
-* Twitter: [@pippinbarr](https://www.twitter.com/pippinbarr)
-* Facebook: [Pippin Barr](http://www.facebook.com/pippin.barr)
+* Email: [saboudreault@gmail.com](mailto:saboudreault@gmail.com)
+* Website: [www.saboudreault.com](http://www.saboudreault.com/)
+* Twitter: [@saboudre](https://www.twitter.com/saboudre)
+* Facebook: [Simon-Albert Boudreault](http://www.facebook.com/worstboyfriendever)
