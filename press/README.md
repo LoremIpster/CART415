@@ -1,4 +1,4 @@
-# _Tanks..._ Press Kit
+# _Tanks Will be Tanks_ Press Kit
 
 ## Getting the game
 
@@ -25,26 +25,18 @@ What does it mean to be a tank? What do they think of each other? How do they fe
 
 ## History
 
-_Tanks..._ is first and foremost an academic project that went under Pippin Barr's supervision.
+_Tanks Will be Tanks_ is first and foremost an academic project that went under Pippin Barr's supervision. The three games have been constructed from Unity's [Tanks Tutorial](https://unity3d.com/learn/tutorials/s/tanks-tutorial) that got showcased at Boston's Unite 2015.
 
-***
+This project is first and foremost an examination of the basic ontologies of the game engine while keeping the game as untouched as I could. The level, for instance, is untouched throughout the interventions, no new rules are added and no already existing mechanic has been modified. The changes occur only through some specific affordances of the Unity engine, namely its lights, cameras, sound, and 3D objects.
 
-_Tanks!?_ grew from my many engagements with Unity's [Tanks Tutorial](https://unity3d.com/learn/tutorials/s/tanks-tutorial) as I tried to learn the engine. This year I had the idea of running my game design studio course at Concordia University by having students start with the Tanks! game from the tutorial and create variations on it. Philosophically, I wanted the class to focus on specific affordances of the Unity engine, so they're tasked with making three prototypes, one focused on Lights and Camera, one on Sound, and one on 3D Objects. These are all kind of "ontologically basic" categories of existence in the Unity engine.
+I am also interested in the game's representation of violence in TANKS!. To quote Pippin's vision: _"TANKS! is a perfect foil for a conversation about a specific kind of violence in viodegames -- that kind of negligent, casual, cartoonish, functional, "abstract" violence that we're meant just to accept"_. TANKS! represent a very common kind of game where violence is dormant in the background, and yet all-encompassing. The excercise was thus not to exacerbate violence, but show everything around and in-between: grief, desolation, trauma and isolation.
 
-Alongside the students, I wanted to create my own project along the same lines: a meditation on the nature of the Unity engine itself, but in the form of a game. This process turned out to be exceedingly arduous as I fought with the underlying design core of how to make such a thing. The process journals in [this repository](https://github.com/pippinbarr/tanks-exclamation-mark-question-mark/wiki/Process-Journal) and the [previous repository](https://github.com/pippinbarr/tankses/wiki/PROCESS) are exhibits of woe, confusion, and (hopefully) interesting ideas about the nature of Unity and its core categories.
-
-All my stress was compounded by the fact that my class was meanwhile turning out _really_ impressive games based on the challenges I was giving them. I started to realise that my plan to build mini Tanks! games that played with the themes/meanings of different Unity Engine elements had been superseded by their work. There was no _need_ for me to do that work when they were already doing it - this was a really strange experience for me, but there you go.
-
-In response to all this, I ended up focusing more on the core idea of _making the engine visible_ through play. That is, I wanted a version of the game that would expose the categories of the engine (camera, light, sound, 3D object, etc.). I decided the best way to do that would be to _change_ those elements during play, to reveal both how they are "arbitrary" in terms of being changeable, but also how crucial the specific point in "parameter space" the actual game represents is. As you change things, the game becomes unplayable (or at least "differently playable").
-
-In the end, the game creates a kind of descent into chaos/entropy by cumulatively changing the parameters. Along the way, though, you can see precisely _what exists_ into the world of the game and _how_ it exists in terms of its parameterisation. Additionally, as the random changes are made, the game sometimes "discovers" forms of play not present in the original: flying tanks, a version of "prop hunt" thanks to mesh swaps, and so on. And of course the aesthetics of the game and its play become progressively more bizarre and, quite often, captivating: new colours, new orientations, new soundtracks are all presented to the player.
-
-The player, hopefully, will be all like: "Tanks!?"
+This project is finally an excercise in method and discipline: maintaining a rigorous [process documentation]((https://github.com/saboudreault/CART415/wiki/Journal), clean [repo](https://github.com/saboudreault/CART415/commits/master) and [commit history]((https://github.com/saboudreault/CART415/commits/master).
 
 
 ## Technology
 
-*Tanks...* was made in [Unity](http://unity3d.com) and is based on Unity's own [Tanks Tutorial game](https://unity3d.com/learn/tutorials/s/tanks-tutorial).
+*Tanks Will be Tanks* was made in [Unity](http://unity3d.com) and is based on Unity's own [Tanks Tutorial game](https://unity3d.com/learn/tutorials/s/tanks-tutorial).
 
 
 ## Features
@@ -52,43 +44,39 @@ The player, hopefully, will be all like: "Tanks!?"
 * Tanks
 * Dust
 * Art
-* A looping 30-second chiptune beat that will claw its way through your skull and never let go
+* A looping 30-second chiptune beat that will claw its way through your skull for eternity
 * Some more tanks
+
 
 ## Games
 
-### 1. An Ontological Examination of Unity Through a Critique of Casual Violence on the Tanks! Game in Hope of Finding a Pacifist Approach to Game Design
-asdf
-
-### 2. Grounded
-asdf
-
-### 3. Searching for Red Tank
-asdf
-
-
-## Images
-
-![1](https://github.com/saboudreault/CART415/blob/master/Assets/Wiki/s_gallery.png)
-
-![2](https://github.com/saboudreault/CART415/blob/master/Assets/Wiki/grounded.png)
-
+### 1. Searching for Red Tank
 ![3](https://github.com/saboudreault/CART415/blob/master/Assets/Wiki/searching.png)
+_Where is Red Tank? Why isn't it coming to play? The more you search, the more you know. But the world is vast, so maybe your search is vain. Still, you should keep going on, just to make sure, for even tanks get lonely._
+
+### 2. An Ontological Examination of Unity Through a Critique of Casual Violence on the Tanks! Game in Hope of Finding a Pacifist Approach to Game Design
+![1](https://github.com/saboudreault/CART415/blob/master/Assets/Wiki/s_gallery.png)
+_We're having fun there, but really what is this mimicking? Are we clapping for the wrong reasons? Why is it always coming back to this?_
+
+### 3. Grounded
+![2](https://github.com/saboudreault/CART415/blob/master/Assets/Wiki/grounded.png)
+_How desensitized are we over all this, really? Over the default use of vague middle-eastern settings; over the endless searching and destroying. War is bleak and empty and absurd, just like this thing._
 
 
 ## Additional Links
 
 - [Process documentation of Tanks...](https://github.com/saboudreault/CART415/wiki/Journal)
 - [Pippin Barr's process documentation of Tanks!?](https://github.com/pippinbarr/tanks-exclamation-mark-question-mark/wiki)
-- [Commit history of Tanks!?](https://github.com/saboudreault/CART415/commits/master)
+- [Commit history of Tanks Will be Tanks](https://github.com/saboudreault/CART415/commits/master)
 - [The original Unity Tanks Tutorial](https://unity3d.com/learn/tutorials/s/tanks-tutorial)
 
 
 ## Credits
 
 * Simon-Albert Boudreault: everything
-* Pippin Barr: the whole underlying concept
-* Christoph Peters et al., Unity Technologies: the original tutorial
+* Pippin Barr: the master plan
+* Unity Technologies: the original tutorial
+
 
 ## Contact
 
