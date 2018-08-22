@@ -39,7 +39,7 @@ _We're having fun there, but really what is this mimicking? Are we clapping for 
 
 ### 3. Grounded
 ![3](https://github.com/saboudreault/CART415/blob/master/Assets/Wiki/grounded.png)
-_How desensitized are we over all this, really? Over the default use of vague middle-eastern settings; over the endless searching and destroying. War is bleak and empty and absurd, just like this thing._
+_How desensitized are we over all this, really? Middle-East? Search & Destroy? War is bleak and empty and absurd, just like this thing._
 
 
 ## History
