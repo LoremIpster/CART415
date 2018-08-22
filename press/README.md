@@ -46,7 +46,7 @@ _How desensitized are we over all this, really? Over the default use of vague mi
 
 _Tanks Will be Tanks_ is first and foremost an academic project that went under Pippin Barr's supervision. The three games have been constructed from Unity's [Tanks Tutorial](https://unity3d.com/learn/tutorials/s/tanks-tutorial) that got showcased at Boston's Unite 2015.
 
-This project is first and foremost an examination of the basic ontologies of the game engine while keeping the game as untouched as I could. The level, for instance, is untouched throughout the interventions, no new rules are added and no already existing mechanic has been modified. The changes occur only through some specific affordances of the Unity engine, namely its lights, cameras, sound, and 3D objects.
+This project is an examination of the basic ontologies of the game engine while keeping the game as untouched as I could. The level, for instance, is untouched throughout the interventions, no new rules are added and no already existing mechanic has been modified. The changes occur only through some specific affordances of the Unity engine, namely its lights, cameras, sound, and 3D objects.
 
 I am also interested in the game's representation of violence in TANKS!. To quote Pippin's vision: _"TANKS! is a perfect foil for a conversation about a specific kind of violence in viodegames -- that kind of negligent, casual, cartoonish, functional, "abstract" violence that we're meant just to accept"_. TANKS! represent a very common kind of game where violence is dormant in the background, and yet all-encompassing. The excercise was thus not to exacerbate violence, but show everything around and in-between: grief, desolation, trauma and isolation.
 
